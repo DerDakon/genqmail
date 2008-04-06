@@ -1,0 +1,25 @@
+# qmail-spp configuration file
+
+# plugins to execute on client's connection
+[connection]
+
+# plugins to execute on HELO/EHLO commands
+[helo]
+
+# plugins to execute on MAIL command
+[mail]
+#plugins/mfdnscheck
+
+# plugins to execute on RCPT command
+[rcpt]
+#plugins/vchkuser
+#plugins/ifauthnext
+#:plugins/rblspp -r zen.spamhaus.org -r dnsbl.sorbs.net -r bl.spamcop.net
+#plugins/tarpit
+
+# plugins to execute on DATA command
+[data]
+
+# plugins to execute on AUTH command
+[auth]
+#plugins/authlog

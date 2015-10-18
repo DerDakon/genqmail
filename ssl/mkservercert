@@ -5,7 +5,7 @@
 # Based on mkimapdcert from courier-imap.
 
 test -x /usr/bin/openssl || exit 0
-source /etc/init.d/functions.sh || exit 1
+source /lib/gentoo/functions.sh || exit 1
 
 filedir="/var/qmail/control"
 pemfile="${filedir}/servercert.pem"

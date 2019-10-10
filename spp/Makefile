@@ -14,7 +14,7 @@ clean:
 	rm -f $(TARGETS)
 
 $(RESOLV_OBJS):
-	$(CC) $(CFLAGS) -o $@ $@.c -lresolv
+	$(CC) $(CFLAGS) $(LDFLAGS) -o $@ $@.c -lresolv
 
 $(SIMPLE_OBJS):
-	$(CC) $(CFLAGS) -o $@ $@.c
+	$(CC) $(CFLAGS) $(LDFLAGS) -o $@ $@.c

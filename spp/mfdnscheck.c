@@ -28,21 +28,21 @@
 #define ERR_TEMPORARY -1
 #define ERR_NOEXIST   -2
 
-void nack(const char *msg)
+static void nack(const char *msg)
 {
 	printf("E550 sorry, %s (#5.1.8)\n", msg);
 	fprintf(stderr, "mfdnscheck: blocked with: %s\n", msg);
 	exit(1);
 }
 
-void fail(const char *mse)
+static void fail(const char *mse)
 {
 	printf("E451 %s (#4.4.0)\n", mse);
 	fprintf(stderr, "mfdnscheck: temporary failure: %s\n", mse);
 	exit(1);
 }
 
-int checkdns(char *hostname, int type)
+static int checkdns(char *hostname, int type)
 {
 	unsigned char buf[PACKETSZ];
 

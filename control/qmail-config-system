@@ -1,5 +1,4 @@
 #!/bin/bash
-# $Header: /var/cvsroot/gentoo-x86/mail-mta/netqmail/files/qmail-config-system,v 1.1 2006/02/12 18:42:33 hansmi Exp $
 
 # This is a configuration system to make using and controlling the interesting
 # parts of the qmail behavior simple. The only variable that needs to be set

@@ -1,6 +1,5 @@
 #!/bin/bash
 # Common Configuration file for all qmail daemons
-# $Header: /var/cvsroot/gentoo-x86/mail-mta/netqmail/files/conf-common,v 1.1 2006/02/12 18:42:33 hansmi Exp $
 
 # Qmail User IDS to run daemons as
 QMAILDUID=$(id -u qmaild)

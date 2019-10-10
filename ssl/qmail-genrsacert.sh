@@ -1,5 +1,4 @@
 #!/bin/bash
-# $Header: /var/cvsroot/gentoo-x86/mail-mta/netqmail/files/qmail-genrsacert.sh,v 1.2 2006/05/06 20:15:11 hansmi Exp $
 # Robin H. Johnson <robbat2@gentoo.org> - October 17, 2003
 #
 # This file generates the static temporary RSA keys needed for qmail to encrypt

@@ -1,5 +1,4 @@
 # Configuration file for qmail-qmqpd
-# $Header: /var/cvsroot/gentoo-x86/mail-mta/netqmail/files/conf-qmqpd,v 1.1 2006/02/12 18:42:33 hansmi Exp $
 
 # Stuff to run before tcpserver
 #QMAIL_TCPSERVER_PRE=""

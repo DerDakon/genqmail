@@ -38,7 +38,7 @@ TCPSERVER_OPTS="${TCPSERVER_OPTS} -R"
 
 # Example using cmd5checkpw
 # See the manpage for cmd5checkpw for details on the passwords
-#QMAIL_SMTP_CHECKPASSWORD="/bin/cmd5checkpw"
+#QMAIL_SMTP_CHECKPASSWORD="/usr/bin/cmd5checkpw"
 
 # Example for checkpassword-pam (emerge checkpassword-pam)
 # Don't forget to make /usr/bin/checkpassword-pam sticky (see README.auth)

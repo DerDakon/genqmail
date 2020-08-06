@@ -19,9 +19,9 @@ QMAIL_POP3_POP3HOST="$(<${QMAIL_CONTROLDIR}/me)"
 
 # This controls what password authentication tool POP3 uses
 # It must support DJB's checkpassword interface (http://cr.yp.to/checkpwd.html)
-QMAIL_POP3_CHECKPASSWORD="/bin/checkpassword"
+QMAIL_POP3_CHECKPASSWORD="/usr/bin/checkpassword"
 # cmd5checkpw only validates passwords from /etc/poppasswd
-#QMAIL_POP3_CHECKPASSWORD="/bin/cmd5checkpw"
+#QMAIL_POP3_CHECKPASSWORD="/usr/bin/cmd5checkpw"
 
 # The name of the maildir in each user's directory.
 # This should be the same thing that defaultdelivery points to

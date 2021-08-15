@@ -65,7 +65,7 @@ then
 		exit 1
 	fi
 else
-    echo "Failed to find sanity checker!"
-    sleep 30s
-    exit 1
+	echo "Failed to find sanity checker!"
+	sleep 30s
+	exit 1
 fi

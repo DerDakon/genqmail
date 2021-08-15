@@ -2,4 +2,4 @@
 # Init script for qmail-send
 # Copied from LWQ
 exec env - PATH="/var/qmail/bin:$PATH" \
-	qmail-start "`grep -v '^#' /var/qmail/control/defaultdelivery`"
+	qmail-start "$(grep -v '^#' /var/qmail/control/defaultdelivery)"

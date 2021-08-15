@@ -3,3 +3,13 @@
 # directory to log to
 # override conf-common on this
 LOG_DEST=/var/log/qmail/qmail-send
+
+# run qmail binaries first, just in case something is
+# not using an absolute path
+PATH="/var/qmail/bin:${PATH}"
+
+# which binary to call when sending a mail to remote hosts
+# this can be used e.g. to sign a mail with DKIM before actually
+# sending it out.
+# This does not work with plain netqmail.
+# QMAILREMOTE="/var/qmail/bin/qmail-remote"

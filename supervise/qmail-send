@@ -1,5 +1,9 @@
 #!/bin/sh
 # Init script for qmail-send
 # Copied from LWQ
-exec env - PATH="/var/qmail/bin:$PATH" \
+
+SERVICE=send
+. /var/qmail/bin/qmail-config-system && \
+exec env - PATH="${PATH}" \
+	QMAILREMOTE="${QMAILREMOTE}" \
 	qmail-start "$(grep -v '^#' /var/qmail/control/defaultdelivery)"

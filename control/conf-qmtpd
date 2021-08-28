@@ -5,7 +5,7 @@
 
 # Stuff to run before tcpserver
 #QMAIL_TCPSERVER_PRE=""
-# Stuff to run qmail-qmtpd
+# Stuff to run before qmail-qmtpd
 #QMAIL_QMTP_PRE=""
 # Stuff to after qmail-qmtpd
 #QMAIL_QMTP_POST=""
